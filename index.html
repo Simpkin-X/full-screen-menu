@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="jeremywinter.com">
+  	<title>Home | Menu Demo 1</title>
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- navbar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+        <span class="container-ai" onclick="myFunction(this)">
+          <span class="icon-bar bar1"></span>
+          <span class="icon-bar bar2"></span>
+          <span class="icon-bar bar3"></span> 
+        </span>
+      </button>
+      <a href="#" class="navbar-brand">Menu Demo</a>
+    </div>
+    <div id="navbar-collapse-1" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <!-- Menu 1 dropdown -->
+        <li class="dropdown">
+        	<a href="https://www.google.com" data-toggle="dropdown" class="dropdown-toggle">Menu 1<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a tabindex="-1" href="landing.html"> Action </a></li>
+            <li><a tabindex="-1" href="landing.html"> Another action </a></li>
+            <li><a tabindex="-1" href="landing.html"> Something else here </a></li>
+            <li class="divider"></li>
+            <li><a tabindex="-1" href="landing.html"> Separated link </a></li>
+          </ul>
+        </li>
+        <!-- Menu 2 dropdown -->
+        <li class="dropdown">
+        	<a href="https://www.google.com" data-toggle="dropdown" class="dropdown-toggle">Menu 2<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a tabindex="-1" href="landing.html"> Action </a></li>
+            <li><a tabindex="-1" href="landing.html"> Another action </a></li>
+            <li><a tabindex="-1" href="landing.html"> Something else here </a></li>
+            <li class="divider"></li>
+            <li><a tabindex="-1" href="landing.html"> Separated link </a></li>
+          </ul>
+        </li>
+        <!-- Menu 3 dropdown -->
+        <li class="dropdown">
+        	<a href="https://www.google.com" data-toggle="dropdown" class="dropdown-toggle">Menu 3<b class="caret"></b></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a tabindex="-1" href="landing.html"> Action </a></li>
+            <li><a tabindex="-1" href="landing.html"> Another action </a></li>
+            <li><a tabindex="-1" href="landing.html"> Something else here </a></li>
+            <li class="divider"></li>
+            <li><a tabindex="-1" href="landing.html"> Separated link </a></li>
+          </ul>
+        </li>        
+      </ul><!-- //nav navbar-nav -->
+    </div><!-- //navbar-collapse-1 -->
+  </div><!-- //container -->
+</div><!-- //navbar -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- jQuery local fallback -->
+    <script>
+      window.jQuery || document.write('<script src="js/jquery-3.1.0.min.js"><\/script>')
+    </script>
+    <!-- Minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
