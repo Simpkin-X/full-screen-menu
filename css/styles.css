@@ -75,7 +75,9 @@ h2 {
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
-  border: 0px solid transparent;
+  border: 0px;
+  border-color: transparent;
+  border-style: solid;
   border-radius: 0px;
 }
 
@@ -154,7 +156,7 @@ h2 {
 .sec1 h2,
 .sec2 h2,
 .sec3 h2 { 
-  color:#90a4ae;
+  color: #90a4ae;
 }
 
 .sec2 { background-color: #eceff1; }
