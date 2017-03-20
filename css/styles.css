@@ -1,46 +1,71 @@
 @charset "UTF-8";
-/* COLORS: ==============
- #1E90FF;  bighter
- #62B1FF;  main color
-====================== */
-/*class for testing*/
-.red{outline:1px solid red;}
-.blue{outline:1px solid blue;}
-/*----------------------------
- Base
-------------------------------*/
+
+/* =========================================
+
+
+  TABLE OF CONTENTS
+    Classes for testing
+    Base
+    Typography
+    Navigation
+    Containers
+
+
+========================================= */
+
+
+/* class for testing
+------------------------------------------*/
+
+.red { outline: 1px solid red; }
+.blue { outline: 1px solid blue; }
+
+
+
+/* Base
+------------------------------------------*/
+
 html,
 body {
-  margin: 0;
-  padding: 0;
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 /* default, the navbar is 50px high.
 body padding prevents nav from overlaying content*/
 body { padding-top: 50px; }
+
+
+
+/* Typography
+------------------------------------------*/
+
 h1 {
-  color:#fff;
+  color: #fff;
   font-size: 4em;
   font-weight: 500;
   margin: auto;
 }
+
 h2 {
   font-size: 2em;
   font-weight: 300;
   margin: auto; 
 }
-.landing {
-    background-color: #333;
-}
-/*----------------------------
- Navigation
-------------------------------*/
+
+
+
+/* Navigation
+------------------------------------------*/
 /* nav bar button over-write*/
+
 .navbar-default { /*line 4495*/
   background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
+
 .navbar-toggle {
   position: relative;
   float: right;
@@ -53,85 +78,92 @@ h2 {
   border: 0px solid transparent;
   border-radius: 0px;
 }
+
 .navbar-toggle:focus {
   outline: 0;
 }
+
 .navbar-toggle .icon-bar {
   display: block;
   width: 24px;
   height: 2px;
   border-radius: 1px;
 }
+
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
+
 .navbar-default .navbar-toggle {
   border-color: #ddd;
 }
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #f8f8f8;
 }
-/* nav bar animation */
+
+/* nav bar animation container */
 .container-ai {
-    display: inline-block;
-    cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
+
 .bar1, .bar2, .bar3 {
-    transition: 0.3s;
+  transition: 0.3s;
 }
+
 /* Rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-5px, 4px) ;
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px) ;
     transform: rotate(-45deg) translate(-5px, 4px) ;
 }
+
 /* Fade out the second bar */
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
+
 /* Rotate last bar */
 .change .bar3 {
-    webkit-transform: rotate(45deg) translate(-4px, -4px) ;
+  -webkit-transform: rotate(45deg) translate(-4px, -4px) ;
     transform: rotate(45deg) translate(-4px, -4px) ;
 }
 
-/* -------------------------------
-content sections 
-----------------------------------*/
+
+
+/* Containers 
+------------------------------------------*/
+
 .parent {
   display: flex;
   flex-wrap: wrap;
 }
+
 .child {
   display: flex;  
   flex: 50vw;
   height: 50vw;
 }
-.hero {
-  background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+
+.hero { background-image: linear-gradient(-225deg, #20e2d7 0%, #f9fea5 100%); }
+
+.landing { background-color: #333; }
+
+/* sections */
+.sec1 h2,
+.sec2 h2,
+.sec3 h2 { 
+  color:#90a4ae;
 }
-/*sections*/
-.sec1 h2 {
-  color:#90A4AE;
-}
-.sec2 {
-  background-color: #ECEFF1;
-}
-.sec2 h2 {
-  color:#90A4AE;
-}
-.sec3 {
-  background-color: #CFD8DC;
-}
-.sec3 h2 {
-  color:#90A4AE;
-}
-.sec4 {
-  background-color: #B0BEC5;
-}
-.sec4 h2 {
-  color:#546E7A;
-}
+
+.sec2 { background-color: #eceff1; }
+
+.sec3 { background-color: #cfd8dc; }
+
+.sec4 { background-color: #b0bec5; }
+
+.sec4 h2 { color: #546e7a; }
 
 
 
