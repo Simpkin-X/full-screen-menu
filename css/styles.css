@@ -6,10 +6,36 @@
 /*class for testing*/
 .red{outline:1px solid red;}
 .blue{outline:1px solid blue;}
-
+/*----------------------------
+ Base
+------------------------------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+/* default, the navbar is 50px high.
+body padding prevents nav from overlaying content*/
+body { padding-top: 50px; }
+h1 {
+  color:#fff;
+  font-size: 4em;
+  font-weight: 500;
+  margin: auto;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: auto; 
+}
 .landing {
     background-color: #333;
 }
+/*----------------------------
+ Navigation
+------------------------------*/
 /* nav bar button over-write*/
 .navbar-default { /*line 4495*/
   background-color: #f8f8f8;
@@ -69,8 +95,43 @@
     transform: rotate(45deg) translate(-4px, -4px) ;
 }
 
-
-
+/* -------------------------------
+content sections 
+----------------------------------*/
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.child {
+  display: flex;  
+  flex: 50vw;
+  height: 50vw;
+}
+.hero {
+  background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+}
+/*sections*/
+.sec1 h2 {
+  color:#90A4AE;
+}
+.sec2 {
+  background-color: #ECEFF1;
+}
+.sec2 h2 {
+  color:#90A4AE;
+}
+.sec3 {
+  background-color: #CFD8DC;
+}
+.sec3 h2 {
+  color:#90A4AE;
+}
+.sec4 {
+  background-color: #B0BEC5;
+}
+.sec4 h2 {
+  color:#546E7A;
+}
 
 
 

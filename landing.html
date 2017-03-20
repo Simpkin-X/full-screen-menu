@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="jeremywinter.com">
-
   	<title>Landing | Menu Demo 5</title>
   	<link rel="stylesheet" href="css/bootstrap.css">
   	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="landing">
 <!-- navbar -->
-<div class="navbar yamm navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top yamm">
   <div class="container">
-
-    <!-- <div class="navbar-header">
-      <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Menu Demo</a>
+    <!-- nav collapse on single page
+    <div class="navbar-header"> 
+      <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a href="#" class="navbar-brand">Menu Demo</a>
     </div> -->
-
+    <!-- animated menu icon version -->
     <div class="navbar-header">
       <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
       	<span class="container-ai" onclick="myFunction(this)">
@@ -28,48 +32,77 @@
 	      	<span class="icon-bar bar3"></span> 
 		    </span>
       </button>
-      <a href="#" class="navbar-brand">Menu Demo</a>
+      <a href="#" class="navbar-brand">Anima Menu Demo</a>
     </div>
 
     <div id="navbar-collapse-1" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <!-- Menu 1 dropdown -->
         <li class="dropdown">
-        	<a href="https://www.google.com" data-toggle="dropdown" class="dropdown-toggle">Menu 1<b class="caret"></b></a>
+        	<a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu 1<b class="caret"></b></a>
           <ul role="menu" class="dropdown-menu">
-            <li><a tabindex="-1" href="index.html"> Action </a></li>
-            <li><a tabindex="-1" href="index.html"> Another action </a></li>
-            <li><a tabindex="-1" href="index.html"> Something else here </a></li>
+            <li><a tabindex="-1" href="index.html"> Home Action </a></li>
+            <li><a tabindex="-1" href="index.html"> Another Home action </a></li>
+            <li><a tabindex="-1" href="index.html"> Something More Home here </a></li>
             <li class="divider"></li>
-            <li><a tabindex="-1" href="index.html"> Separated link </a></li>
+            <li><a tabindex="-1" href="index.html"> Separated Home link </a></li>
           </ul>
         </li>
         <!-- Menu 2 dropdown -->
         <li class="dropdown">
-        	<a href="https://www.google.com" data-toggle="dropdown" class="dropdown-toggle">Menu 2<b class="caret"></b></a>
+        	<a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu 2<b class="caret"></b></a>
           <ul role="menu" class="dropdown-menu">
-            <li><a tabindex="-1" href="index.html"> Action </a></li>
-            <li><a tabindex="-1" href="index.html"> Another action </a></li>
-            <li><a tabindex="-1" href="index.html"> Something else here </a></li>
+            <li><a tabindex="-1" href="landing.html"> Landing Action </a></li>
+            <li><a tabindex="-1" href="landing.html"> Another Landing action </a></li>
+            <li><a tabindex="-1" href="landing.html"> More Landing here </a></li>
             <li class="divider"></li>
-            <li><a tabindex="-1" href="index.html"> Separated link </a></li>
+            <li><a tabindex="-1" href="landing.html"> Landing Separated link </a></li>
           </ul>
         </li>
         <!-- Menu 3 dropdown -->
         <li class="dropdown">
-        	<a href="https://www.google.com" data-toggle="dropdown" class="dropdown-toggle">Menu 3<b class="caret"></b></a>
+        	<a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu 3<b class="caret"></b></a>
           <ul role="menu" class="dropdown-menu">
-            <li><a tabindex="-1" href="index.html"> Action </a></li>
-            <li><a tabindex="-1" href="index.html"> Another action </a></li>
-            <li><a tabindex="-1" href="index.html"> Something else here </a></li>
-            <li class="divider"></li>
-            <li><a tabindex="-1" href="index.html"> Separated link </a></li>
+            <li><a tabindex="-1" href="#"> Action# </a></li>
+            <li><a tabindex="-1" href="#"> Another# action </a></li>
+            <li><a tabindex="-1" href="#"> Something More# here </a></li>
           </ul>
         </li>        
       </ul><!-- //nav navbar-nav -->
     </div><!-- //navbar-collapse-1 -->
   </div><!-- //container -->
-</div><!-- //navbar -->
+</nav><!-- //navbar -->
+<!-- ////////////////////// Hero -->
+<section class="parent hero">
+  <div class="child">
+    <h1>Hello World!</h1>
+  </div>
+</section>
+<!-- ////////////////////// section 1 -->
+<section id="s1" class="parent sec1">
+  <div class="child">
+    <h2>Section 1</h2>
+  </div>
+</section>
+<!-- ////////////////////// section 2 -->
+<section id="s2" class="parent sec2">
+  <div class="child">
+    <h2>Section 2</h2>
+  </div>
+</section>
+<!-- ////////////////////// section 3 -->
+<section id="s3" class="parent sec3">
+  <div class="child">
+    <h2>Section 3</h2>
+  </div>
+</section>
+<!-- ////////////////////// section 4 -->
+<section id="s4" class="parent sec4">
+  <div class="child">
+    <h2>Section 4</h2>
+  </div>
+</section>
+<!-- ////////////////////// END -->
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- jQuery local fallback -->
@@ -78,20 +111,6 @@
     </script>
     <!-- Minified JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      //will prevent unexpected menu close when using some components (like accordion, forms, etc)
-      $(function() {
-        window.prettyPrint && prettyPrint()
-        $(document).on('click', '.yamm .dropdown-menu', function(e) {
-          e.stopPropagation()
-      })
-      })
-    </script>
-    <script>
-      // nav bar animation
-      function myFunction(x) {
-        x.classList.toggle("change");
-      };
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
